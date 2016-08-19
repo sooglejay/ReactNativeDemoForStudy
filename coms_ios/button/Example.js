@@ -4,13 +4,18 @@ import Button from './Button'
 
 class Example extends React.Component {
   constructor(props: Object) {
+    console.log('constructor');
     super(props)
     this.state = {
       isOnPressing: false
     }
+    console.log('isOnPressing:', this.state.isOnPressing);
+
   }
 
   render() {
+    console.log('render');
+
     var onPressProps;
     if (this.state.isOnPressing) {
       onPressProps = styles.buttonStylePressing
@@ -120,8 +125,8 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    marginLeft: 20,
-    marginRight: 20,
+    marginLeft: 40,
+    marginRight: 40,
   },
   textStyle: {
     color: 'white'

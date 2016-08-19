@@ -7,7 +7,7 @@
 var React = require('react');
 var {AppRegistry, } = require('react-native');
 ;
-import Example from './Example'
+import Example from './coms_ios/button/Example'
 
 var button = React.createClass({
   render: function() {
