@@ -1,9 +1,21 @@
 /**
-* Sample React Native App
-* https://github.com/facebook/react-native
-* @flow
-*/
+ * Sample React Native App
+ * https://github.com/facebook/react-native
+ */
+'use strict';
 
-import {AppRegistry} from 'react-native';
-import  NavigatorComponent  from './coms_ios/NavigatorComponent';
-AppRegistry.registerComponent('University', () => NavigatorComponent);
+var React = require('react');
+var {AppRegistry, } = require('react-native');
+;
+import Example from './Example'
+
+var button = React.createClass({
+  render: function() {
+    return (
+      <Example />
+      );
+  }
+});
+
+
+AppRegistry.registerComponent('University', () => button);
