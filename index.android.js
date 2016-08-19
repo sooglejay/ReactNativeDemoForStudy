@@ -1,30 +1,21 @@
 /**
-* Sample React Native App
-* https://github.com/facebook/react-native
-* @flow
-*/
-
-// import component from file
-// import { AppRegistry } from 'react-native';
-// import NavigatorComponent from './coms_android/navigator/NavigatorComponent';
-// AppRegistry.registerComponent('University', () => NavigatorComponent);
-
-
-/**
  * Sample React Native App
  * https://github.com/facebook/react-native
  */
-import React, { Component } from 'react';
-import { AppRegistry, Text } from 'react-native';
+'use strict';
 
-class HelloWorldApp extends Component {
-  render() {
+var React = require('react');
+var {AppRegistry, } = require('react-native');
+;
+import Example from './coms_ios/button/Example'
+
+var button = React.createClass({
+  render: function() {
     return (
-      <Text>
-        Hello world! Fucking you fuck
-      </Text>
+      <Example />
       );
   }
-}
+});
 
-AppRegistry.registerComponent('University', () => HelloWorldApp);
+
+AppRegistry.registerComponent('University', () => button);

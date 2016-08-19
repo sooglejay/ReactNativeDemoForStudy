@@ -1,0 +1,14 @@
+ref to error_1.log
+Android Question:
+
+each time after I modified few codes in my index.android.io just a hello world project
+
+then I type: react-native run-android
+
+my genymotion simulator runs the app , and it shows 'hello world' , everything is ok but no matter how many times I change the code ,such as change ' hello world '  to ' fuck the world '   and then type ' react-native run-android ', the simulator always shows ' hello world '  not the content I modified just now 'fuck the world'
+
+I get a solution and type:
+              curl "http://localhost:8081/index.android.bundle?platform=android" -o "android/app/src/main/assets/index.android.bundle" 
+then type: react-native run-android
+
+simulator shows the desired sence and the problem is gone. But each time when I want to run android and get the expected results after I changed something, I must type the command above , I am confused and wonder the reason. How can I only type 'react-native run-android' to run my app?
