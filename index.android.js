@@ -2,20 +2,17 @@
  * Sample React Native App
  * https://github.com/facebook/react-native
  */
-'use strict';
+import React, { Component } from 'react';
+import { AppRegistry, Text } from 'react-native';
 
-var React = require('react');
-var {AppRegistry, } = require('react-native');
-;
-import Example from './coms_ios/button/Example'
-
-var button = React.createClass({
-  render: function() {
+class HelloWorldApp extends Component {
+  render() {
     return (
-      <Example />
+      <Text>
+        Hello world!
+      </Text>
       );
   }
-});
+}
 
-
-AppRegistry.registerComponent('University', () => button);
+AppRegistry.registerComponent('University', () => HelloWorldApp);

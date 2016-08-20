@@ -7,12 +7,12 @@
 var React = require('react');
 var {AppRegistry, } = require('react-native');
 ;
-import Example from './coms_ios/button/Example'
+import TabBarExample from './coms_ios/tab/TabBarExample'
 
 var button = React.createClass({
   render: function() {
     return (
-      <Example />
+      <TabBarExample />
       );
   }
 });
