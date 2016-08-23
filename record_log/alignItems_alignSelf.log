@@ -1,0 +1,4 @@
+justifyContent: 'center', alignItems: 'center' 
+一个是主轴             一个是次轴的对齐方式
+
+但是alignSelf就是他们自己在父类中的布局方式，有点像layout_gravity（对应alignItems） 和gravity（对应alignSelf）的区别，
